@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/icon.webp" type="image/webp">
+    <title>AMV Hub Indonesia</title>
+    <meta name="description" content="Resources, tools, plugins, and project files for AMV creators.">
+    <meta property="og:image" content="https://amv.arsip.site/resources/thumbnail.webp" />
+    <meta property="og:title" content="AMV Hub Indonesia" />
+    <meta property="og:description" content="Resources, tools, plugins, and project files for AMV creators." />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "AMV Hub Indonesia",
+            "description": "Resources, tools, plugins, and project files for AMV creators.",
+            "url": "https://amv.arsip.site"
+        }
+    </script>
+    <link rel="preload" href="resources/icon.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="preload" href="resources/background.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="preload" href="resources/covers.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="preload" href="resources/font.woff2" as="font" type="font/woff2" crossorigin="anonymous" fetchpriority="high">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module" defer></script>
+</head>
+<body>
+    <div class="header" role="banner">
+        <a class="profile" href="#home" aria-label="Profile">
+            <img class="icon" src="resources/icon.webp" width="240" height="240" alt="Icon">
+        </a>
+        <a class="title" href="#home" aria-label="Title">AMV Hub ID</a>
+        <a href="#home" aria-label="Collections" data-icon="apps"></a>
+    </div>
+    <div class="page home" role="main">
+        <h1>AMV Hub Indonesia</h1>
+        <span class="br"></span>
+        <span class="p">"Unleash Your Creativity"</span>
+        <span class="hr"></span>
+        <span class="h2">Collections</span>
+        <span class="p">Resources, tools, plugins, and project files for AMV creators.</span>
+        <span class="br"></span>
+        <div class="list title-desc collections-list">
+            <a href="#software-tools" aria-label="Software & Tools">
+                <span class="title">Software & Tools</span>
+                <span class="desc">Software and tools for AMV editing</span>
+            </a>
+            <a href="#plugins-scripts" aria-label="Plugins & Scripts">
+                <span class="title">Plugins & Scripts</span>
+                <span class="desc">Plugins and scripts for editing software</span>
+            </a>
+            <a href="#editing-assets" aria-label="Editing Assets">
+                <span class="title">Editing Assets</span>
+                <span class="desc">Assets for AMV editing</span>
+            </a>
+            <a href="#project-files" aria-label="Project Files">
+                <span class="title">Project Files</span>
+                <span class="desc">Project files from AMV editors</span>
+            </a>
+        </div>
+        <span class="hr"></span>
+        <span class="h2">Join the Community</span>
+        <span class="p">Connect with other AMV creators, share your edits, learn new techniques, and grow together with the community.</span>
+        <span class="br"></span>
+        <a class="button" href="https://chat.whatsapp.com/JXJWOe4moNpE7TXr4Ox923" target="_blank">
+            <div data-icon="whatsapp"></div>
+            <span>Join Now</span>
+        </a>
+    </div>
+    <div class="page about">
+        <span class="h2">About Us</span>
+        <span class="p">About AMV Hub Indonesia</span>
+        <span class="hr"></span>
+        <span class="p">AMV Hub Indonesia is a community-driven resource hub created for AMV editors and content creators.</span>
+        <span class="p">Our goal is to provide useful editing resources such as anime clips, software tools, and project files to help creators improve their editing skills and workflow.</span>
+        <span class="p">We aim to build a space where creators can learn, share, and grow together.</span>
+    </div>
+    <div class="page software-tools">
+        <span class="h2">Software & Tools</span>
+        <span class="p">Essential software and tools commonly used by AMV editors for editing, encoding, and visual effects.</span>
+        <span class="hr"></span>
+        <div class="list icon-title-desc software-tools-list"
+            data-src="collections/software-tools.list"
+            data-template="#icon-title-desc-card"
+        ></div>
+    </div>
+    <div class="page plugins-scripts">
+        <span class="h2">Plugins & Scripts</span>
+        <span class="p">Useful plugins and scripts to enhance your editing workflow.</span>
+        <span class="hr"></span>
+        <div class="list icon-title-desc plugins-scripts"
+            data-src="collections/plugins-scripts.list"
+            data-template="#icon-title-desc-card"
+        ></div>
+    </div>
+    <div class="page editing-assets">
+        <span class="h2">Editing Assets</span>
+        <span class="p">A collection of editing resources that can help improve your AMV edits.</span>
+        <span class="hr"></span>
+        <span class="h3">Anime Clips</span>
+        <span class="p">High-quality anime clips that can be used for AMV editing projects.</span>
+        <span class="br"></span>
+        <div class="list icon-title-desc anime-clips-list"
+            data-src="collections/anime-clips.list"
+            data-template="#icon-title-desc-card"
+        ></div>
+    </div>
+    <div class="page project-files">
+        <span class="h2">Project Files</span>
+        <span class="p">Download project files from other editors to study editing techniques and learn new workflows.</span>
+        <span class="hr"></span>
+        <div class="list title-desc project-files-list"
+            data-src="collections/project-files.list"
+            data-template="#title-desc-card"
+        ></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        <span>&copy; 2026 AMV Hub ID. All Rights Reserved.</span>
+        <span>Built for the Indonesian AMV creator community.</span>
+        <div class="urls">
+            <a href="#faq">FAQ</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+    <template id="icon-title-desc-card">
+        <a target="_blank" data-field="href:url">
+            <img class="icon" loading="lazy" data-field="src:image">
+            <span class="title" data-field="textContent:title"></span>
+            <span class="desc" data-field="textContent:desc"></span>
+        </a>
+    </template>
+    <template id="title-desc-card">
+        <a target="_blank" data-field="href:url style.backgroundImage:image">
+            <span class="title" data-field="textContent:title"></span>
+            <span class="desc" data-field="textContent:desc"></span>
+        </a>
+    </template>
+</body>
+</html>
